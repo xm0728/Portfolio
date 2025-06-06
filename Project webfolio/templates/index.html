@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="animate-fade-slide">
+    <h1>Hi, I'm Zhang Ximing</h1>
+    <p>Welcome to my portfolio! I love computing!.</p>
+    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="profile-pic">
+</div>
+{% endblock %}
