@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Projects</h1>
+<div class="grid">
+    <div class="card">
+        <h2>BlackJack Game</h2>
+        <p>Using user interface to create a blackjack game with all the rules and smart computer decisioning!</p>
+        <a href="https://github.com/xm0728/BlackJackGame" target="_blank">BlackJack Github</a>
+        <img src="{{ url_for('static', filename='blackjack.png') }}" class="projectimage" alt="Blackjack image">
+        <a href="https://www.youtube.com/watch?v=itjQFYMMna8" target="_blank">Video Showcase</a>
+    </div>
+    <div class="card">
+        <h2>Pokedex</h2>
+        <p>Capable of finding specific pokemon or their stats from 800 pokemon. An user interface Pokemon battle too!</p>
+        <a href="https://github.com/xm0728/PokedexGame" target="_blank">Pokedex Github</a>
+        <img src="{{ url_for('static', filename='pokemonbattle.png') }}" class="projectimage" alt="Blackjack image">
+        <a href="https://www.youtube.com/watch?v=itjQFYMMna8" target="_blank">Video Showcase</a>
+    </div>
+</div>
+{% endblock %}
